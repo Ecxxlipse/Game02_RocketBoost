@@ -7,6 +7,7 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] float levelLoadDelay = 2f; 
     [SerializeField] AudioClip success;
     [SerializeField] AudioClip crash;
+    bool sequenceStarted = false;
     
     AudioSource audioSource;
 
@@ -36,16 +37,32 @@ public class CollisionHandler : MonoBehaviour
 
     void StartSuccessSequence()
     {
-        audioSource.PlayOneShot(success);
-        GetComponent<Movement>().enabled = false;
-        Invoke("LoadNextLevel", levelLoadDelay);
+        if (sequenceStarted == false)
+        {
+            audioSource.Stop();
+
+            audioSource.PlayOneShot(success);
+            GetComponent<Movement>().enabled = false;
+            Invoke("LoadNextLevel", levelLoadDelay);
+
+            sequenceStarted = true;
+        }
+
     }
 
     void StartCrashSequence()
     {
-        audioSource.PlayOneShot(crash);
-        GetComponent<Movement>().enabled = false;
-        Invoke("ReloadLevel", levelLoadDelay);
+        if (sequenceStarted == false)
+        {
+            audioSource.Stop();
+            
+            audioSource.PlayOneShot(crash);
+            GetComponent<Movement>().enabled = false;
+            Invoke("ReloadLevel", levelLoadDelay);
+
+            sequenceStarted = true;
+        }
+
     }
 
     void LoadNextLevel()

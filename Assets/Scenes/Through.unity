@@ -238,6 +238,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86db5eee57a32464a87a3119295475b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionHandler
+  levelLoadDelay: 2
+  success: {fileID: 0}
+  crash: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +757,67 @@ MonoBehaviour:
     Time: 0
     Smoothing: 0
     IgnoreY: 0
+--- !u!1001 &752767193
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 262034351176637437, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.06338
+      objectReference: {fileID: 0}
+    - target: {fileID: 262034351176637437, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.19427
+      objectReference: {fileID: 0}
+    - target: {fileID: 262034351176637437, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.23149
+      objectReference: {fileID: 0}
+    - target: {fileID: 262034351176637437, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 262034351176637437, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 262034351176637437, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 262034351176637437, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 262034351176637437, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 262034351176637437, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 262034351176637437, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582545329369084016, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790383480546717138, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
+      propertyPath: m_Name
+      value: Barriers
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e630a6b9560f9a4eb884ccd3dfee884, type: 3}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,3 +1240,4 @@ SceneRoots:
   - {fileID: 1641520455}
   - {fileID: 8636171604201244223}
   - {fileID: 1683053370}
+  - {fileID: 752767193}
